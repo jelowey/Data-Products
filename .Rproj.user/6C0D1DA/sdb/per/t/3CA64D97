@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "#\n# This is the server logic of a Shiny web application. You can run the \n# application by clicking 'Run App' above.\n#\n# Find out more about building applications with Shiny here:\n# \n#    http://shiny.rstudio.com/\n#\n\nlibrary(shiny)\nxlndf<- read.csv(\"https://raw.githubusercontent.com/miniace/Data-Products/master/xlndf.csv\")\n# Define server logic required to draw a histogram\nshinyServer(function(input, output) {\n   \n  output$distPlot <- renderPlot({\n    \n    # generate bins based on input$bins from ui.R\n    x    <- faithful[, 2] \n    bins <- seq(min(x), max(x), length.out = input$bins + 1)\n    \n    # draw the histogram with the specified number of bins\n    hist(x, breaks = bins, col = 'darkgray', border = 'white')\n    \n    y<- c(xlndf$identity)\n    \n  })\n  \n})\n",
+    "contents" : "#\n# This is the server logic of a Shiny web application. You can run the \n# application by clicking 'Run App' above.\n#\n# Find out more about building applications with Shiny here:\n# \n#    http://shiny.rstudio.com/\n#\nlibrary(ggplot2)\nlibrary(shiny)\n\n# Define server logic required to draw a histogram\nshinyServer(function(input, output) {\n   \n  output$distPlot <- renderPlot({\n    #Load card data\n    colorcodes <- c(\"White\", \"Blue\", \"Black\", \"Red\", \"Green\", \"Gold\")\n    xlndf<- read.csv(\"https://raw.githubusercontent.com/miniace/Data-Products/master/xlndf.csv\")\n    xlndf$identity<-as.factor(xlndf$identity)\n    if(input$color == 'G'){graphcol<- colorcodes[5]}\n    if(input$color == 'W'){graphcol<-colorcodes[1]}\n    if(input$color == 'U'){graphcol<-colorcodes[2]}\n    if(input$color == 'B'){graphcol<-colorcodes[3]}\n    if(input$color == 'R'){graphcol<-colorcodes[4]}\n    if(input$color == 'Multicolor'){graphcol<-colorcodes[6]}\n    categorizeddata <- filter(xlndf, identity ==input$color)\n    # generate histogram based on radio button clicked\n    ggplot(categorizeddata, aes(x=cmc))+geom_histogram(stat=\"count\", fill=graphcol)\n    \n    \n  })\n  \n})\n",
     "created" : 1506896165241.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3839949019",
+    "hash" : "799988833",
     "id" : "3CA64D97",
-    "lastKnownWriteTime" : 1506968398,
-    "last_content_update" : 1506968398437,
+    "lastKnownWriteTime" : 1506977717,
+    "last_content_update" : 1506977717793,
     "path" : "D:/Data-Products/IxalanCardReviewer/server.R",
     "project_path" : "IxalanCardReviewer/server.R",
     "properties" : {
