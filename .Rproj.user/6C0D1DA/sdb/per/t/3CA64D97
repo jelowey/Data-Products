@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "#\n# This is the server logic of a Shiny web application. You can run the \n# application by clicking 'Run App' above.\n#\n# Find out more about building applications with Shiny here:\n# \n#    http://shiny.rstudio.com/\n#\nlibrary(ggplot2)\nlibrary(shiny)\n\n# Define server logic required to draw a histogram\nshinyServer(function(input, output) {\n   \n  output$distPlot <- renderPlot({\n    #Load card data\n    colorcodes <- c(\"White\", \"Blue\", \"Black\", \"Red\", \"Green\", \"Gold\")\n    xlndf<- read.csv(\"https://raw.githubusercontent.com/miniace/Data-Products/master/xlndf.csv\")\n    xlndf$identity<-as.factor(xlndf$identity)\n    if(input$color == 'G'){graphcol<- colorcodes[5]}\n    if(input$color == 'W'){graphcol<-colorcodes[1]}\n    if(input$color == 'U'){graphcol<-colorcodes[2]}\n    if(input$color == 'B'){graphcol<-colorcodes[3]}\n    if(input$color == 'R'){graphcol<-colorcodes[4]}\n    if(input$color == 'Multicolor'){graphcol<-colorcodes[6]}\n    categorizeddata <- filter(xlndf, identity ==input$color)\n    # generate histogram based on radio button clicked\n    ggplot(categorizeddata, aes(x=cmc))+geom_histogram(stat=\"count\", fill=graphcol)\n    \n    \n  })\n  \n})\n",
+    "contents" : "#\n# This is the server logic of a Shiny web application. You can run the \n# application by clicking 'Run App' above.\n#\n# Find out more about building applications with Shiny here:\n# \n#    http://shiny.rstudio.com/\n#\nlibrary(ggplot2)\nlibrary(shiny)\nlibrary(dplyr)\n\n# Define server logic required to draw a histogram\nshinyServer(function(input, output) {\n   \n  output$distPlot <- renderPlot({\n    #Load card data\n    colorcodes <- c(\"White\", \"Blue\", \"Black\", \"Red\", \"Green\")\n    xlndf<- read.csv(\"https://raw.githubusercontent.com/miniace/Data-Products/master/xlndf.csv\")\n    xlndf$identity<-as.factor(xlndf$identity)\n    #Set the color of the graph based on the color chosen\n    if(input$color == 'G'){graphcol<- colorcodes[5]}\n    if(input$color == 'W'){graphcol<-colorcodes[1]}\n    if(input$color == 'U'){graphcol<-colorcodes[2]}\n    if(input$color == 'B'){graphcol<-colorcodes[3]}\n    if(input$color == 'R'){graphcol<-colorcodes[4]}\n    categorizeddata <- filter(xlndf, identity ==input$color)\n    # generate histogram based on radio button clicked\n    ggplot(categorizeddata, aes(x=cmc))+geom_histogram(stat=\"count\", fill=graphcol)\n    \n    \n  })\n  \n})\n",
     "created" : 1506896165241.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "799988833",
+    "hash" : "3000066851",
     "id" : "3CA64D97",
-    "lastKnownWriteTime" : 1506977717,
-    "last_content_update" : 1506977717793,
+    "lastKnownWriteTime" : 1506979969,
+    "last_content_update" : 1506979969027,
     "path" : "D:/Data-Products/IxalanCardReviewer/server.R",
     "project_path" : "IxalanCardReviewer/server.R",
     "properties" : {

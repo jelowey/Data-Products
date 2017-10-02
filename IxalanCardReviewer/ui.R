@@ -8,14 +8,14 @@
 #
 
 library(shiny)
-colorchoices <- c("W","U","B","R","G", "Multicolor")
+colorchoices <- c("W","U","B","R","G")
 # Define UI for application that draws a histogram
 shinyUI(fluidPage(
   
   # Application title
-  titlePanel("Old Faithful Geyser Data"),
+  titlePanel("Ixalan Color Distribution"),
   
-  # Sidebar with a slider input for number of bins 
+  # Sidebar with a input for which color to display
   sidebarLayout(
     sidebarPanel(
        radioButtons("color", "Select Color of Card", choices = colorchoices, inline = TRUE)

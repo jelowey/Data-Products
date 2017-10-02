@@ -8,21 +8,22 @@
 #
 library(ggplot2)
 library(shiny)
+library(dplyr)
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
    
   output$distPlot <- renderPlot({
     #Load card data
-    colorcodes <- c("White", "Blue", "Black", "Red", "Green", "Gold")
+    colorcodes <- c("White", "Blue", "Black", "Red", "Green")
     xlndf<- read.csv("https://raw.githubusercontent.com/miniace/Data-Products/master/xlndf.csv")
     xlndf$identity<-as.factor(xlndf$identity)
+    #Set the color of the graph based on the color chosen
     if(input$color == 'G'){graphcol<- colorcodes[5]}
     if(input$color == 'W'){graphcol<-colorcodes[1]}
     if(input$color == 'U'){graphcol<-colorcodes[2]}
     if(input$color == 'B'){graphcol<-colorcodes[3]}
     if(input$color == 'R'){graphcol<-colorcodes[4]}
-    if(input$color == 'Multicolor'){graphcol<-colorcodes[6]}
     categorizeddata <- filter(xlndf, identity ==input$color)
     # generate histogram based on radio button clicked
     ggplot(categorizeddata, aes(x=cmc))+geom_histogram(stat="count", fill=graphcol)

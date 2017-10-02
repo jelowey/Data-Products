@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "#\n# This is the user-interface definition of a Shiny web application. You can\n# run the application by clicking 'Run App' above.\n#\n# Find out more about building applications with Shiny here:\n# \n#    http://shiny.rstudio.com/\n#\n\nlibrary(shiny)\ncolorchoices <- c(\"W\",\"U\",\"B\",\"R\",\"G\", \"Multicolor\")\n# Define UI for application that draws a histogram\nshinyUI(fluidPage(\n  \n  # Application title\n  titlePanel(\"Old Faithful Geyser Data\"),\n  \n  # Sidebar with a slider input for number of bins \n  sidebarLayout(\n    sidebarPanel(\n       radioButtons(\"color\", \"Select Color of Card\", choices = colorchoices, inline = TRUE)\n    ),\n   \n    # Show a plot of the generated distribution\n    mainPanel(\n       plotOutput(\"distPlot\")\n    )\n  )\n))\n",
+    "contents" : "#\n# This is the user-interface definition of a Shiny web application. You can\n# run the application by clicking 'Run App' above.\n#\n# Find out more about building applications with Shiny here:\n# \n#    http://shiny.rstudio.com/\n#\n\nlibrary(shiny)\ncolorchoices <- c(\"W\",\"U\",\"B\",\"R\",\"G\")\n# Define UI for application that draws a histogram\nshinyUI(fluidPage(\n  \n  # Application title\n  titlePanel(\"Ixalan Color Distribution\"),\n  \n  # Sidebar with a input for which color to display\n  sidebarLayout(\n    sidebarPanel(\n       radioButtons(\"color\", \"Select Color of Card\", choices = colorchoices, inline = TRUE)\n    ),\n   \n    # Show a plot of the generated distribution\n    mainPanel(\n       plotOutput(\"distPlot\")\n    )\n  )\n))\n",
     "created" : 1506896164939.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1381090762",
+    "hash" : "3860170430",
     "id" : "6ABDD598",
-    "lastKnownWriteTime" : 1506967826,
-    "last_content_update" : 1506967827000,
+    "lastKnownWriteTime" : 1506979801,
+    "last_content_update" : 1506979801775,
     "path" : "D:/Data-Products/IxalanCardReviewer/ui.R",
     "project_path" : "IxalanCardReviewer/ui.R",
     "properties" : {

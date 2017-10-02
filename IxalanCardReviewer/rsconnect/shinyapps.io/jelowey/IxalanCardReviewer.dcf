@@ -1,0 +1,12 @@
+name: IxalanCardReviewer
+title: IxalanCardReviewer
+username:
+account: jelowey
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 221289
+bundleId: 1007578
+url: https://jelowey.shinyapps.io/IxalanCardReviewer/
+when: 1506980106.76443
+asMultiple: FALSE
+asStatic: FALSE
