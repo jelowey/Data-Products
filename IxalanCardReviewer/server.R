@@ -8,7 +8,7 @@
 #
 
 library(shiny)
-
+xlndf<- read.csv("https://raw.githubusercontent.com/miniace/Data-Products/master/xlndf.csv")
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
    
@@ -20,6 +20,8 @@ shinyServer(function(input, output) {
     
     # draw the histogram with the specified number of bins
     hist(x, breaks = bins, col = 'darkgray', border = 'white')
+    
+    y<- c(xlndf$identity)
     
   })
   

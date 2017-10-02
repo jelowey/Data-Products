@@ -236,38 +236,38 @@
 "235","Tishana, Voice of Thunder","{5}{G}{U}","7","Creature","Mythic Rare","*","*","UG"
 "236","Vona, Butcher of Magan","{3}{W}{B}","5","Creature","Mythic Rare","4","4","WB"
 "237","Vraska, Relic Seeker","{4}{B}{G}","6","Legendary Planeswalker — Vraska","Mythic Rare",NA,NA,"BG"
-"238","Cobbled Wings","{2}","2","Artifact — Equipment","Common",NA,NA,NA
-"239","Conqueror's Galleon","{4}","4","Artifact — Vehicle","Rare","2","10",NA
-"240","Conqueror's Foothold",NA,"4","Land","Rare",NA,NA,NA
-"241","Dowsing Dagger","{2}","2","Artifact — Equipment","Rare",NA,NA,NA
-"242","Lost Vale",NA,"2","Land","Rare",NA,NA,NA
-"243","Dusk Legion Dreadnought","{5}","5","Artifact — Vehicle","Uncommon","4","6",NA
-"244","Elaborate Firecannon","{2}","2","Artifact","Uncommon",NA,NA,NA
-"245","Fell Flagship","{3}","3","Artifact — Vehicle","Rare","3","3",NA
-"246","Gilded Sentinel","{4}","4","Creature","Common","3","3",NA
-"247","Hierophant's Chalice","{3}","3","Artifact","Common",NA,NA,NA
-"248","Pillar of Origins","{2}","2","Artifact","Uncommon",NA,NA,NA
-"249","Pirate's Cutlass","{3}","3","Artifact — Equipment","Common",NA,NA,NA
-"250","Primal Amulet","{4}","4","Artifact","Rare",NA,NA,NA
-"251","Primal Wellspring",NA,"4","Land","Rare",NA,NA,NA
-"252","Prying Blade","{1}","1","Artifact — Equipment","Common",NA,NA,NA
-"253","Sentinel Totem","{1}","1","Artifact","Uncommon",NA,NA,NA
-"254","Shadowed Caravel","{2}","2","Artifact — Vehicle","Rare","2","2",NA
-"255","Sleek Schooner","{3}","3","Artifact — Vehicle","Uncommon","4","3",NA
-"256","Sorcerous Spyglass","{2}","2","Artifact","Rare",NA,NA,NA
-"257","Thaumatic Compass","{2}","2","Artifact","Rare",NA,NA,NA
-"258","Spires of Orazca",NA,"2","Land","Rare",NA,NA,NA
-"259","Treasure Map","{2}","2","Artifact","Rare",NA,NA,NA
-"260","Treasure Cove",NA,"2","Land","Rare",NA,NA,NA
-"261","Vanquisher's Banner","{5}","5","Artifact","Rare",NA,NA,NA
+"238","Cobbled Wings","{2}","2","Artifact — Equipment","Common",NA,NA,"NA"
+"239","Conqueror's Galleon","{4}","4","Artifact — Vehicle","Rare","2","10","NA"
+"240","Conqueror's Foothold",NA,"4","Land","Rare",NA,NA,"NA"
+"241","Dowsing Dagger","{2}","2","Artifact — Equipment","Rare",NA,NA,"NA"
+"242","Lost Vale",NA,"2","Land","Rare",NA,NA,"NA"
+"243","Dusk Legion Dreadnought","{5}","5","Artifact — Vehicle","Uncommon","4","6","NA"
+"244","Elaborate Firecannon","{2}","2","Artifact","Uncommon",NA,NA,"NA"
+"245","Fell Flagship","{3}","3","Artifact — Vehicle","Rare","3","3","NA"
+"246","Gilded Sentinel","{4}","4","Creature","Common","3","3","NA"
+"247","Hierophant's Chalice","{3}","3","Artifact","Common",NA,NA,"NA"
+"248","Pillar of Origins","{2}","2","Artifact","Uncommon",NA,NA,"NA"
+"249","Pirate's Cutlass","{3}","3","Artifact — Equipment","Common",NA,NA,"NA"
+"250","Primal Amulet","{4}","4","Artifact","Rare",NA,NA,"NA"
+"251","Primal Wellspring",NA,"4","Land","Rare",NA,NA,"NA"
+"252","Prying Blade","{1}","1","Artifact — Equipment","Common",NA,NA,"NA"
+"253","Sentinel Totem","{1}","1","Artifact","Uncommon",NA,NA,"NA"
+"254","Shadowed Caravel","{2}","2","Artifact — Vehicle","Rare","2","2","NA"
+"255","Sleek Schooner","{3}","3","Artifact — Vehicle","Uncommon","4","3","NA"
+"256","Sorcerous Spyglass","{2}","2","Artifact","Rare",NA,NA,"NA"
+"257","Thaumatic Compass","{2}","2","Artifact","Rare",NA,NA,"NA"
+"258","Spires of Orazca",NA,"2","Land","Rare",NA,NA,"NA"
+"259","Treasure Map","{2}","2","Artifact","Rare",NA,NA,"NA"
+"260","Treasure Cove",NA,"2","Land","Rare",NA,NA,"NA"
+"261","Vanquisher's Banner","{5}","5","Artifact","Rare",NA,NA,"NA"
 "262","Dragonskull Summit",NA,"0","Land","Rare",NA,NA,"BR"
 "263","Drowned Catacomb",NA,"0","Land","Rare",NA,NA,"UB"
-"264","Field of Ruin",NA,"0","Land","Uncommon",NA,NA,NA
+"264","Field of Ruin",NA,"0","Land","Uncommon",NA,NA,"NA"
 "265","Glacial Fortress",NA,"0","Land","Rare",NA,NA,"WU"
 "266","Rootbound Crag",NA,"0","Land","Rare",NA,NA,"RG"
 "267","Sunpetal Grove",NA,"0","Land","Rare",NA,NA,"GW"
-"268","Unclaimed Territory",NA,"0","Land","Uncommon",NA,NA,NA
-"269","Unknown Shores",NA,"0","Land","Common",NA,NA,NA
+"268","Unclaimed Territory",NA,"0","Land","Uncommon",NA,NA,"NA"
+"269","Unknown Shores",NA,"0","Land","Common",NA,NA,"NA"
 "270","Plains",NA,"0","Basic Land — Plains","Basic Land",NA,NA,"W"
 "271","Plains",NA,"0","Basic Land — Plains","Basic Land",NA,NA,"W"
 "272","Plains",NA,"0","Basic Land — Plains","Basic Land",NA,NA,"W"

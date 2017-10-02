@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1506968341056.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "74897FD3",
+    "lastKnownWriteTime" : 3419473787924512768,
+    "last_content_update" : 1506968341056,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "D655CC43",
+        "caption" : "xlndf2",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=xlndf2&cache_key=D655CC43",
+        "displayedObservations" : 299,
+        "environment" : "",
+        "object" : "xlndf2",
+        "preview" : 0,
+        "totalObservations" : 299,
+        "variables" : 8
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
